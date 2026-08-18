@@ -6,7 +6,11 @@ The generated app is a native, offline-capable Mac overlay with Liquid Glass sty
 
 ## Install the skill
 
-Copy `skills/build-codex-micro-guide/` into your Codex skills directory, then ask:
+In Codex, run:
+
+> $skill-installer install https://github.com/grAIcetech/codex-micro-glass-guide/tree/main/skills/build-codex-micro-guide
+
+Or copy `skills/build-codex-micro-guide/` into your Codex skills directory. Then ask:
 
 > Use $build-codex-micro-guide to build a floating guide for my Codex Micro layout.
 

@@ -166,7 +166,7 @@ private final class GuideController: NSWindowController {
         panel.isMovableByWindowBackground = true
         panel.minSize = NSSize(width: 560, height: 720)
         panel.maxSize = NSSize(width: 1400, height: 1200)
-        panel.setFrameAutosaveName("grAIce.CodexMicroGlassGuide.frame")
+        panel.setFrameAutosaveName("Community.CodexMicroGlassGuide.frame")
 
         let root = NSView()
         root.frame = NSRect(origin: .zero, size: panel.frame.size)
