@@ -155,7 +155,7 @@ private final class GuideController: NSWindowController {
         panel.isOpaque = false
         panel.backgroundColor = .clear
         panel.appearance = NSAppearance(named: .darkAqua)
-        panel.title = "Codex Micro Glass Guide"
+        panel.title = "Generic Codex Micro Guide"
         panel.titleVisibility = .hidden
         panel.titlebarAppearsTransparent = true
         panel.standardWindowButton(.closeButton)?.isHidden = true
@@ -164,7 +164,7 @@ private final class GuideController: NSWindowController {
         panel.hasShadow = true
         panel.alphaValue = 0.96
         panel.isMovableByWindowBackground = true
-        panel.minSize = NSSize(width: 560, height: 720)
+        panel.minSize = NSSize(width: 560, height: 792)
         panel.maxSize = NSSize(width: 1400, height: 1200)
         panel.setFrameAutosaveName("Community.CodexMicroGlassGuide.frame")
 
@@ -211,11 +211,11 @@ private final class GuideController: NSWindowController {
         ])
 
         stack.addArrangedSubview(makeHeader())
-        stack.addArrangedSubview(makeSectionLabel("WHITE DIAL + JOYSTICK  •  YOUR BUILT-IN OPTIONS"))
+        stack.addArrangedSubview(makeSectionLabel("WHITE DIAL + JOYSTICK  •  SAMPLE OPTIONS"))
         stack.addArrangedSubview(makeAnalogControlsRow())
-        stack.addArrangedSubview(makeSectionLabel("AGENT KEYS  •  YOUR 6 MOST RECENT TASKS"))
+        stack.addArrangedSubview(makeSectionLabel("AGENT KEYS  •  6 SAFE SAMPLES"))
         stack.addArrangedSubview(makeAgentGrid())
-        stack.addArrangedSubview(makeSectionLabel("COMMAND KEYS  •  YOUR SELECTED KEYCAPS"))
+        stack.addArrangedSubview(makeSectionLabel("COMMAND KEYS  •  SAMPLE KEYCAPS"))
         stack.addArrangedSubview(makeCommandRows())
         stack.addArrangedSubview(makeSectionLabel("BOTTOM EDGE  •  LAYERS + CONNECTION"))
         stack.addArrangedSubview(makeBottomControlsRow())
@@ -264,7 +264,7 @@ private final class GuideController: NSWindowController {
         titleStack.addArrangedSubview(title)
         titleStack.addArrangedSubview(subtitle)
 
-        let source = makePill("RECENT × 6", color: NSColor.systemBlue)
+        let source = makePill("SAMPLES × 6", color: NSColor.systemBlue)
 
         let close = NSButton(title: "×", target: self, action: #selector(closePanel))
         close.isBordered = false
@@ -462,7 +462,7 @@ private final class GuideController: NSWindowController {
         touch.layer?.backgroundColor = NSColor.white.withAlphaComponent(0.08).cgColor
         touch.layer?.borderWidth = 1
         touch.layer?.borderColor = NSColor.white.withAlphaComponent(0.18).cgColor
-        let status = NSTextField(labelWithString: "YOUR LAYOUT\n13 keys · personalized")
+        let status = NSTextField(labelWithString: "SAMPLE LAYOUT\n13 keys · unlinked")
         status.alignment = .center
         status.maximumNumberOfLines = 2
         status.font = .monospacedSystemFont(ofSize: 9, weight: .semibold)
@@ -576,7 +576,7 @@ private final class GuideController: NSWindowController {
         row.alignment = .centerY
         row.spacing = 10
 
-        let tip = NSTextField(labelWithString: "Blue tiles open tasks · other tiles teach only")
+        let tip = NSTextField(labelWithString: "Sample Agent tiles stay local · other tiles teach only")
         tip.font = .systemFont(ofSize: 10, weight: .medium)
         tip.textColor = .tertiaryLabelColor
 

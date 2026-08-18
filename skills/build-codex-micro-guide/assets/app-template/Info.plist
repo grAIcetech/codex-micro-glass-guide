@@ -5,15 +5,15 @@
     <key>CFBundleDevelopmentRegion</key>
     <string>en</string>
     <key>CFBundleDisplayName</key>
-    <string>Codex Micro Glass Guide</string>
+    <string>Generic Codex Micro Guide</string>
     <key>CFBundleExecutable</key>
     <string>CodexMicroGlassGuide</string>
     <key>CFBundleIdentifier</key>
-    <string>tech.graice.codex-micro-glass-guide</string>
+    <string>community.codexmicro.glassguide</string>
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundleName</key>
-    <string>Codex Micro Glass Guide</string>
+    <string>Generic Codex Micro Guide</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>
