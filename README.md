@@ -1,6 +1,17 @@
-<p align="center">
-  <img src="assets/codex-micro-glass-hero.png" alt="Original 3D concept illustration of a translucent glass macro keypad with glowing keys" width="100%">
-</p>
+<table>
+  <tr>
+    <td width="58%" align="center">
+      <img src="assets/codex-micro-glass-hero.png" alt="Faithful translucent community rendering of the Codex Micro control layout">
+    </td>
+    <td width="42%" align="center">
+      <img src="assets/codex-micro-glass-app.png" alt="The actual privacy-safe Codex Micro Glass Guide app">
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>The real control layout, rendered in glass</strong></td>
+    <td align="center"><strong>The actual working guide</strong></td>
+  </tr>
+</table>
 
 <h1 align="center">Codex Micro Glass Guide</h1>
 
@@ -12,7 +23,7 @@
 <p align="center"><em>Think of it as training wheels—made of glass, with excellent lighting.</em></p>
 
 > [!NOTE]
-> The hero image is original concept artwork, not an official product rendering.
+> The device image is an original community rendering based on the official control layout, not an official product photograph. The app image is captured from the real working build with privacy-safe sample tasks.
 
 ## What is it?
 
