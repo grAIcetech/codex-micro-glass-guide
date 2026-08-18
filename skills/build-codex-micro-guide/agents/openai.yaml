@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codex Micro Glass Guide"
+  short_description: "Build a personalized floating Codex Micro guide"
+  default_prompt: "Use $build-codex-micro-guide to build a personalized floating guide for my Codex Micro layout."
