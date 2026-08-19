@@ -1,18 +1,3 @@
-<table>
-  <tr>
-    <td width="58%" align="center">
-      <img src="assets/codex-micro-glass-hero.png" alt="Faithful translucent community rendering of the Codex Micro control layout">
-    </td>
-    <td width="42%" align="center">
-      <img src="assets/codex-micro-glass-app.png" alt="The actual privacy-safe Codex Micro Glass Guide app">
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><strong>The real control layout, rendered in glass</strong></td>
-    <td align="center"><strong>The actual working guide</strong></td>
-  </tr>
-</table>
-
 <h1 align="center">Codex Micro Glass Guide</h1>
 
 <p align="center">
@@ -22,16 +7,22 @@
 
 <p align="center"><em>Think of it as training wheels—made of glass, with excellent lighting.</em></p>
 
+<p align="center">
+  <img src="assets/codex-micro-glass-hero.png" alt="The accurate Codex Micro control layout connected by six colored layer lights to the real privacy-safe Glass Guide app" width="100%">
+</p>
+
+<p align="center"><sub>Real control layout · six programmable layers · actual working guide</sub></p>
+
 > [!NOTE]
-> The device image is an original community rendering based on the official control layout, not an official product photograph. The app image is captured from the real working build with privacy-safe sample tasks.
+> The device image is an original community rendering based on the official control layout, not an official product photograph. The interface is captured from the real working build with privacy-safe sample tasks.
 
 ## What is it?
 
 **Codex Micro Glass Guide** turns your current Codex Micro layout into a friendly floating cheat sheet. Keep it above your apps while you learn the device, click any control for a plain-language reminder, and tuck it away when muscle memory takes over.
 
-| ✨ Looks delightful | 🧭 Teaches as you go | 🔒 Stays local |
-| --- | --- | --- |
-| Translucent glass, 3-D beveled buttons, and soft RGB halos. | Explains the dial, joystick, touch sensor, layer lights, and keys. | The generated Mac app launches offline and keeps personal task links out of this repository. |
+- **✨ Looks delightful** — translucent glass, 3-D beveled buttons, and soft RGB halos.
+- **🧭 Teaches as you go** — explains the dial, joystick, touch sensor, layer lights, and keys.
+- **🔒 Stays local** — the generated Mac app launches offline and keeps personal task links out of this repository.
 
 ## The fun bits
 
@@ -48,6 +39,13 @@
 The **skill** teaches Codex how to recover your layout, protect private task data, build the guide, and verify the real rendered window.
 
 The **generated app** is the native macOS overlay you can open, move, resize, and use offline while learning the device.
+
+<details>
+<summary><strong>See the complete privacy-safe guide</strong></summary>
+<p align="center">
+  <img src="assets/codex-micro-glass-app.png" alt="Complete privacy-safe Codex Micro Glass Guide interface" width="72%">
+</p>
+</details>
 
 ## Install the skill
 
