@@ -2,3 +2,4 @@
 *.app/
 .build/
 preview-private.*
+.codex-hero/
