@@ -19,15 +19,15 @@
 ## Watch the three-minute guide
 
 <p align="center">
-  <a href="media/Codex-Micro-Glass-Guide.mp4">
-    <img src="assets/codex-micro-glass-hero.png" alt="Watch the Codex Micro Glass Guide three-minute walkthrough" width="88%">
+  <a href="https://github.com/grAIcetech/codex-micro-glass-guide/releases/download/v1.0.0/Codex-Micro-Glass-Guide.mp4">
+    <img src="assets/codex-micro-glass-hero.png" alt="Download the Codex Micro Glass Guide three-minute walkthrough" width="88%">
   </a>
 </p>
 
 <p align="center">
-  <a href="media/Codex-Micro-Glass-Guide.mp4"><strong>Watch or download the final video</strong></a>
+  <a href="https://github.com/grAIcetech/codex-micro-glass-guide/releases/download/v1.0.0/Codex-Micro-Glass-Guide.mp4"><strong>Download the final three-minute video</strong></a>
   ·
-  <a href="media/Codex-Micro-Glass-Guide.srt">Download captions</a>
+  <a href="https://github.com/grAIcetech/codex-micro-glass-guide/releases/download/v1.0.0/Codex-Micro-Glass-Guide.srt">Download captions</a>
 </p>
 
 ## The problem
