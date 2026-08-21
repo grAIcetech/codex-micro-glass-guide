@@ -20,7 +20,7 @@ ffmpeg -hide_banner -y \
     [0:a]atrim=duration=180.54,asetpts=PTS-STARTPTS[outa];
 
     [1:v]scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,format=rgba,split=5[hero_open_src][hero_b][hero_c][hero_final][hero_unused];
-    [hero_open_src]trim=duration=8,setpts=PTS-STARTPTS,zoompan=z=min(zoom+0.00015\,1.03):x=iw/2-(iw/zoom/2):y=ih/2-(ih/zoom/2):d=1:s=1920x1080:fps=25,format=rgba,fade=t=in:st=0:d=0.45:alpha=1,fade=t=out:st=7.35:d=0.65:alpha=1,setpts=PTS+0/TB[opening];
+    [hero_open_src]trim=duration=8,setpts=PTS-STARTPTS,zoompan=z=1+0.03*on/199:x=iw/2-(iw/zoom/2)+4*sin(on/28):y=ih/2-(ih/zoom/2)+2*sin(on/35):d=1:s=1920x1080:fps=25,format=rgba,fade=t=in:st=0:d=0.45:alpha=1,fade=t=out:st=7.35:d=0.65:alpha=1,setpts=PTS+0/TB[opening];
     [hero_b]trim=duration=9,setpts=PTS-STARTPTS,fade=t=in:st=0:d=0.55:alpha=1,fade=t=out:st=8.35:d=0.65:alpha=1,setpts=PTS+52/TB[paperweight];
     [hero_c]trim=duration=10,setpts=PTS-STARTPTS,fade=t=in:st=0:d=0.55:alpha=1,fade=t=out:st=9.35:d=0.65:alpha=1,setpts=PTS+74/TB[solution];
     [hero_final]trim=duration=23.54,setpts=PTS-STARTPTS,fade=t=in:st=0:d=0.45:alpha=1,setpts=PTS+157/TB[final_hero];

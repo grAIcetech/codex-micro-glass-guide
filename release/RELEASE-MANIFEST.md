@@ -6,7 +6,7 @@ Release date: 2026-08-21
 
 | File | Purpose | SHA-256 |
 |---|---|---|
-| `media/Codex-Micro-Glass-Guide.mp4` | Final 1920×1080 H.264/AAC launch video, 3:00.562 | `521f387b0995bec70c29d2a2ee514157f6d4d3706bfc3b54c8adb4cea069e72f` |
+| `media/Codex-Micro-Glass-Guide.mp4` | Final 1920×1080 H.264/AAC launch video, 3:00.562 | `7e5e7112d9febe6c1ad323852b48fad05413e19eef1a920b7cbd8944a7aaadf1` |
 | `media/Codex-Micro-Glass-Guide.srt` | English captions for the final cut | `6d0d4435d9c17e5091a3eb06bc15b9d26c164ede14e157824763e7fe441aa911` |
 
 ## Provenance
@@ -29,6 +29,7 @@ Release date: 2026-08-21
 ## Verification
 
 - Complete video decode passed.
+- Opening frames verify the intended 3% dimensional push-in and gentle drift.
 - Audio was independently transcribed and compared with the approved narration.
 - The final disclosure occurs once.
 - `Codex Micro Glass Guide` is spoken three deliberate times.
