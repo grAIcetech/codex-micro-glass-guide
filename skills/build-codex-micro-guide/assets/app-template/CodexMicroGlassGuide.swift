@@ -1,4 +1,8 @@
 import AppKit
+import Carbon
+
+private let guideHotKeySignature: OSType = 0x434D4747 // "CMGG"
+private let guideHotKeyIdentifier: UInt32 = 1
 
 private struct ThreadSlot {
     let id: String
@@ -451,8 +455,8 @@ private final class GuideController: NSWindowController {
         second.distribution = .fillEqually
         second.addArrangedSubview(actionTile("MIC", "Hold to talk", "mic.fill", .systemPink,
             "Hold this key while speaking; release when you are finished."))
-        second.addArrangedSubview(actionTile("EMPTY", "Unassigned", "circle.dashed", .systemGray,
-            "This physical key is intentionally unassigned right now."))
+        second.addArrangedSubview(actionTile("GUIDE", "Show / hide", "rectangle.on.rectangle", .systemCyan,
+            "Show or hide Codex Micro Glass Guide. Map this physical key to Control + Option + Command + G."))
         second.addArrangedSubview(actionTile("CODEX", "Send", "paperplane.fill", .systemBlue,
             "Submit the message in the Codex composer."))
 
@@ -633,8 +637,26 @@ private final class GuideController: NSWindowController {
     }
 
     @objc private func closePanel() {
-        panelRef?.close()
-        NSApplication.shared.terminate(nil)
+        hideGuide()
+    }
+
+    func showGuide() {
+        showWindow(nil)
+        panelRef?.orderFrontRegardless()
+    }
+
+    func hideGuide() {
+        panelRef?.orderOut(nil)
+    }
+
+    @discardableResult
+    func toggleGuide() -> Bool {
+        if panelRef?.isVisible == true {
+            hideGuide()
+        } else {
+            showGuide()
+        }
+        return panelRef?.isVisible == true
     }
 
     @objc private func opacityChanged(_ sender: NSSlider) {
@@ -652,16 +674,83 @@ private final class GuideController: NSWindowController {
 
 private final class AppDelegate: NSObject, NSApplicationDelegate {
     private var controller: GuideController?
+    private var hotKeyRef: EventHotKeyRef?
+    private var hotKeyHandler: EventHandlerRef?
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         NSApp.setActivationPolicy(.accessory)
         controller = GuideController()
-        controller?.showWindow(nil)
-        controller?.window?.orderFrontRegardless()
+        installHotKey()
+
+        if !CommandLine.arguments.contains("--hidden") {
+            controller?.showGuide()
+        }
     }
 
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
-        true
+        false
+    }
+
+    func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
+        controller?.showGuide()
+        return false
+    }
+
+    func applicationWillTerminate(_ notification: Notification) {
+        if let hotKeyRef {
+            UnregisterEventHotKey(hotKeyRef)
+        }
+        if let hotKeyHandler {
+            RemoveEventHandler(hotKeyHandler)
+        }
+    }
+
+    private func installHotKey() {
+        var eventType = EventTypeSpec(
+            eventClass: OSType(kEventClassKeyboard),
+            eventKind: UInt32(kEventHotKeyPressed)
+        )
+
+        InstallEventHandler(
+            GetApplicationEventTarget(),
+            { _, event, userData in
+                guard let event, let userData else { return noErr }
+
+                var eventHotKeyID = EventHotKeyID()
+                let status = GetEventParameter(
+                    event,
+                    EventParamName(kEventParamDirectObject),
+                    EventParamType(typeEventHotKeyID),
+                    nil,
+                    MemoryLayout<EventHotKeyID>.size,
+                    nil,
+                    &eventHotKeyID
+                )
+
+                if status == noErr, eventHotKeyID.id == guideHotKeyIdentifier {
+                    let appDelegate = Unmanaged<AppDelegate>.fromOpaque(userData).takeUnretainedValue()
+                    appDelegate.controller?.toggleGuide()
+                }
+                return noErr
+            },
+            1,
+            &eventType,
+            Unmanaged.passUnretained(self).toOpaque(),
+            &hotKeyHandler
+        )
+
+        let hotKeyID = EventHotKeyID(
+            signature: guideHotKeySignature,
+            id: guideHotKeyIdentifier
+        )
+        RegisterEventHotKey(
+            UInt32(kVK_ANSI_G),
+            UInt32(controlKey | optionKey | cmdKey),
+            hotKeyID,
+            GetApplicationEventTarget(),
+            0,
+            &hotKeyRef
+        )
     }
 }
 

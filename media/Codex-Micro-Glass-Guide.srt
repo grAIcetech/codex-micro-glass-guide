@@ -1,0 +1,331 @@
+1
+00:00:00,000 --> 00:00:02,510
+This is Codex Micro Glass Guide.
+
+2
+00:00:03,010 --> 00:00:05,910
+I have a very cute, and not inexpensive,
+
+3
+00:00:05,960 --> 00:00:08,690
+device on my desk: the Work Louder and
+
+4
+00:00:08,770 --> 00:00:10,460
+OpenAI Codex Micro.
+
+5
+00:00:10,960 --> 00:00:12,940
+It was the first limited release of a
+
+6
+00:00:12,990 --> 00:00:14,470
+functional Codex product.
+
+7
+00:00:14,930 --> 00:00:16,850
+The demonstration videos make it look
+
+8
+00:00:16,910 --> 00:00:17,930
+almost magical.
+
+9
+00:00:19,360 --> 00:00:21,110
+People fly through their work with a
+
+10
+00:00:21,200 --> 00:00:24,460
+dial, joystick, glowing Agent keys, and
+
+11
+00:00:24,550 --> 00:00:26,210
+six programmable layers.
+
+12
+00:00:26,710 --> 00:00:28,050
+I thought, yes.
+
+13
+00:00:28,620 --> 00:00:31,070
+I am going to use this for everything.
+
+14
+00:00:31,570 --> 00:00:33,700
+Then I sat down in front of mine and
+
+15
+00:00:33,770 --> 00:00:35,120
+forgot what the buttons did.
+
+16
+00:00:35,620 --> 00:00:37,570
+That is the problem with programmable
+
+17
+00:00:37,630 --> 00:00:38,210
+hardware.
+
+18
+00:00:38,740 --> 00:00:41,240
+Seeing what it can do is not the same as
+
+19
+00:00:41,320 --> 00:00:42,640
+remembering how to do it.
+
+20
+00:00:43,140 --> 00:00:45,240
+One button can mean something completely
+
+21
+00:00:45,300 --> 00:00:46,730
+different on another layer.
+
+22
+00:00:47,230 --> 00:00:48,840
+If I have to stop, search the
+
+23
+00:00:48,890 --> 00:00:51,400
+documentation, and rebuild the map in my
+
+24
+00:00:51,480 --> 00:00:53,940
+head every time, the friction wins.
+
+25
+00:00:55,390 --> 00:00:57,720
+And I did not buy a lovely, expensive
+
+26
+00:00:57,760 --> 00:01:00,180
+tool so it could become a dust-gathering
+
+27
+00:01:00,240 --> 00:01:00,870
+paperweight.
+
+28
+00:01:01,370 --> 00:01:02,710
+I am a visual learner.
+
+29
+00:01:03,390 --> 00:01:05,470
+I needed the controls to stay visible
+
+30
+00:01:05,500 --> 00:01:06,270
+while I worked.
+
+31
+00:01:06,770 --> 00:01:09,280
+I needed color, position, and
+
+32
+00:01:09,370 --> 00:01:11,810
+plain-language reminders that I could
+
+33
+00:01:11,880 --> 00:01:13,480
+understand at a glance.
+
+34
+00:01:13,980 --> 00:01:17,170
+So I built Codex Micro Glass Guide.
+
+35
+00:01:18,330 --> 00:01:20,840
+It is a translucent Mac guide that
+
+36
+00:01:20,920 --> 00:01:23,270
+floats above my other apps while I learn
+
+37
+00:01:23,330 --> 00:01:24,090
+the device.
+
+38
+00:01:24,590 --> 00:01:27,440
+I can move it, resize it, and click a
+
+39
+00:01:27,510 --> 00:01:29,720
+control for a simple reminder without
+
+40
+00:01:29,790 --> 00:01:30,680
+leaving my work.
+
+41
+00:01:31,180 --> 00:01:33,770
+The actual layout is right there: the
+
+42
+00:01:33,840 --> 00:01:36,390
+white dial, joystick, touch sensor,
+
+43
+00:01:36,810 --> 00:01:39,760
+layer lights, command buttons, and six
+
+44
+00:01:39,930 --> 00:01:41,510
+glowing Agent keys.
+
+45
+00:01:42,830 --> 00:01:44,810
+A quick touch cycles through the six
+
+46
+00:01:44,890 --> 00:01:45,380
+layers.
+
+47
+00:01:45,850 --> 00:01:48,010
+The three small lights show which layer
+
+48
+00:01:48,080 --> 00:01:48,890
+is active.
+
+49
+00:01:49,220 --> 00:01:51,200
+My labels can match the shortcuts I
+
+50
+00:01:51,320 --> 00:01:52,180
+really use.
+
+51
+00:01:52,680 --> 00:01:54,870
+I think of it as training wheels made of
+
+52
+00:01:54,940 --> 00:01:55,450
+glass.
+
+53
+00:01:55,780 --> 00:01:57,830
+The guide stays beside me while
+
+54
+00:01:57,880 --> 00:01:59,880
+repetition becomes familiarity.
+
+55
+00:02:00,380 --> 00:02:02,390
+The point is not to keep reading the
+
+56
+00:02:02,430 --> 00:02:03,220
+guide forever.
+
+57
+00:02:03,710 --> 00:02:06,440
+The point is to use the hardware until
+
+58
+00:02:06,510 --> 00:02:08,080
+my hands know what to do.
+
+59
+00:02:08,580 --> 00:02:11,100
+The public project includes the Codex
+
+60
+00:02:11,140 --> 00:02:13,840
+skill and a privacy-safe Mac app
+
+61
+00:02:13,910 --> 00:02:14,490
+template.
+
+62
+00:02:14,950 --> 00:02:17,630
+Personal task names and links stay in
+
+63
+00:02:17,690 --> 00:02:18,600
+your local copy.
+
+64
+00:02:19,100 --> 00:02:21,300
+And this is not one perfect layout for
+
+65
+00:02:21,370 --> 00:02:21,950
+everyone.
+
+66
+00:02:22,320 --> 00:02:23,570
+Rename your layers.
+
+67
+00:02:23,800 --> 00:02:24,810
+Change the colors.
+
+68
+00:02:25,090 --> 00:02:26,140
+Rewrite the notes.
+
+69
+00:02:27,220 --> 00:02:29,410
+Adapt it for your hands, your brain,
+
+70
+00:02:29,620 --> 00:02:31,470
+your workflow, and your desk.
+
+71
+00:02:32,230 --> 00:02:35,120
+Then share the privacy-safe ideas that
+
+72
+00:02:35,170 --> 00:02:36,510
+could help someone else.
+
+73
+00:02:37,010 --> 00:02:39,600
+I built Codex Micro Glass Guide to turn
+
+74
+00:02:39,640 --> 00:02:41,830
+an exciting piece of hardware into a
+
+75
+00:02:41,900 --> 00:02:43,640
+tool I will actually use.
+
+76
+00:02:44,140 --> 00:02:45,760
+The skill and source are in the
+
+77
+00:02:45,810 --> 00:02:46,720
+repository.
+
+78
+00:02:47,190 --> 00:02:49,740
+Make it yours, build the muscle memory,
+
+79
+00:02:49,970 --> 00:02:52,610
+and do not let your Codex Micro gather
+
+80
+00:02:52,680 --> 00:02:53,120
+dust.
+
+81
+00:02:53,620 --> 00:02:55,480
+Independent community project.
+
+82
+00:02:55,870 --> 00:02:58,090
+Not affiliated with or endorsed by
+
+83
+00:02:58,210 --> 00:03:00,040
+OpenAI or Work Louder.

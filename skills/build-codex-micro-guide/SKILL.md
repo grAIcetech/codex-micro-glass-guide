@@ -31,6 +31,7 @@ Edit only the scaffolded copy:
 - Replace the six `ThreadSlot` samples with confirmed titles, descriptions, and IDs. Leave `id` empty when no confirmed deep link exists.
 - Replace dial and joystick labels with the installed mappings.
 - Match the user's selected command keycaps.
+- When the user wants one-button access, label the selected physical key **GUIDE · Show / hide** and map it to `Control + Option + Command + G`; the template registers that global shortcut while it is running.
 - Preserve the touch-sensor and layer-light explanations unless current primary documentation contradicts them.
 - Keep approval, rejection, microphone, and command tiles instructional. Do not make a teaching overlay execute consequential actions.
 - Preserve `.titled`, `.fullSizeContentView`, and `.resizable` so every edge and corner resizes natively.
@@ -46,6 +47,7 @@ Then launch the generated `.app` and inspect the real window. Verify:
 - text remains legible at minimum, default, and expanded sizes;
 - all six Agent tiles have RGB-style halos while command tiles remain comparatively unlit;
 - teaching tiles update the explanation strip;
+- `Control + Option + Command + G` shows and hides the guide while the helper is running;
 - only Agent tiles with confirmed IDs open `codex://threads/...`;
 - the app launches without a network connection, while live Codex destinations may still require Codex connectivity;
 - `plutil -lint` and `codesign --verify --deep --strict` pass.
