@@ -16,16 +16,16 @@
 > [!NOTE]
 > The device image is an original community rendering based on the official control layout, not an official product photograph. The interface is captured from the real working build with privacy-safe sample tasks.
 
-## Watch the three-minute guide
+## Watch the four-minute guide
 
 <p align="center">
   <a href="https://raw.githubusercontent.com/grAIcetech/codex-micro-glass-guide/main/media/Codex-Micro-Glass-Guide.mp4">
-    <img src="assets/codex-micro-glass-hero.png" alt="Download the Codex Micro Glass Guide three-minute walkthrough" width="88%">
+    <img src="assets/codex-micro-glass-hero.png" alt="Download the Codex Micro Glass Guide four-minute walkthrough" width="88%">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://raw.githubusercontent.com/grAIcetech/codex-micro-glass-guide/main/media/Codex-Micro-Glass-Guide.mp4"><strong>Download the final three-minute video</strong></a>
+  <a href="https://raw.githubusercontent.com/grAIcetech/codex-micro-glass-guide/main/media/Codex-Micro-Glass-Guide.mp4"><strong>Download the final four-minute video</strong></a>
   ·
   <a href="https://raw.githubusercontent.com/grAIcetech/codex-micro-glass-guide/main/media/Codex-Micro-Glass-Guide.srt">Download captions</a>
 </p>

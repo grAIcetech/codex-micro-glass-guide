@@ -88,7 +88,7 @@ That is the part I am most excited about. A limited-release device does not need
 
 ## Try Codex Micro Glass Guide
 
-The skill, source, privacy-safe Mac app template, three-minute video, and installation instructions are now public. Start at the consent-first page:
+The skill, source, privacy-safe Mac app template, four-minute video, and installation instructions are now public. Start at the consent-first page:
 
 **<https://graicetech.github.io/codex-micro-glass-guide/join/>**
 
@@ -118,7 +118,7 @@ The limited-release Work Louder × OpenAI Codex Micro has a dial, joystick, touc
 
 So I built **Codex Micro Glass Guide**: a translucent, movable, resizable Mac guide that keeps the controls and plain-language reminders visible while muscle memory develops.
 
-The privacy-safe project includes a Codex skill, a native Mac app template, and a three-minute walkthrough. It is designed to be personalized—rename the layers, change the colors, rewrite the notes, and match it to your workflow.
+The privacy-safe project includes a Codex skill, a native Mac app template, and a four-minute walkthrough. It is designed to be personalized—rename the layers, change the colors, rewrite the notes, and match it to your workflow.
 
 It is now open source:
 
