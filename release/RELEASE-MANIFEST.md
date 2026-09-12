@@ -1,7 +1,7 @@
 # Codex Micro Glass Guide release manifest
 
 Release date: 2026-09-11
-Release: v1.0.1
+Prepared release: v1.0.1 (awaiting GitHub release upload)
 Media revised: 2026-09-11
 
 ## Final media
@@ -23,7 +23,7 @@ Media revised: 2026-09-11
 ## Release revision
 
 - Restored the approved three-minute GitHub cut for the limited release.
-- Published the corrected media under v1.0.1 so the stale v1.0.0 four-minute asset remains preserved as historical provenance.
+- Prepared the corrected media for v1.0.1; the stale v1.0.0 four-minute asset remains preserved as historical provenance.
 - Replaced the companion captions with the matching three-minute caption track.
 
 ## Verification
