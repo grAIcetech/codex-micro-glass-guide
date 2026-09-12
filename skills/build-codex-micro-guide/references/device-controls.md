@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="../../../assets/graice-logo.svg" alt="grAIce" width="168">
+</p>
+
+<p align="center"><sub>© 2026 Michelle Juhanson · grAIce Tech</sub></p>
+
 # Codex Micro control reference
 
 Use these primary sources when labeling the physical device:

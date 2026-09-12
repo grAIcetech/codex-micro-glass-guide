@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="../assets/graice-logo.svg" alt="grAIce" width="168">
+</p>
+
+<p align="center"><sub>© 2026 Michelle Juhanson · grAIce Tech</sub></p>
+
 # Consent page setup
 
 `index.html` is the consent-first intermediary page for launch links. It explains what

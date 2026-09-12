@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="assets/graice-logo.svg" alt="grAIce" width="168">
+</p>
+
+<p align="center"><sub>© 2026 Michelle Juhanson · grAIce Tech</sub></p>
+
 <h1 align="center">Codex Micro Glass Guide</h1>
 
 <p align="center">

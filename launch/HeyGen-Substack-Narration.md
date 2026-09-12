@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="../assets/graice-logo.svg" alt="grAIce" width="168">
+</p>
+
+<p align="center"><sub>© 2026 Michelle Juhanson · grAIce Tech</sub></p>
+
 # HeyGen narration: Codex Micro Glass Guide
 
 I have a very cute—and not inexpensive—device on my desk: the Work Louder and OpenAI Codex Micro.

@@ -43,7 +43,8 @@
     .page { width: min(1120px, calc(100% - 36px)); margin: 0 auto; padding: 28px 0 56px; }
     .nav { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
     .brand { display: inline-flex; align-items: center; gap: 11px; color: var(--ink); text-decoration: none; font-weight: 700; letter-spacing: -.02em; }
-    .brand-mark { width: 28px; height: 28px; border-radius: 9px; background: linear-gradient(135deg, var(--cyan), var(--violet)); box-shadow: 0 0 26px rgba(134,233,255,.32); }
+    .brand-logo { width: 118px; height: auto; display: block; }
+    .brand-divider { color: var(--soft); font-weight: 500; }
     .nav-note { color: var(--soft); font-size: .88rem; }
     .hero { display: grid; grid-template-columns: 1.02fr .98fr; align-items: center; gap: clamp(30px, 6vw, 88px); min-height: 640px; padding: 62px 0 42px; }
     .eyebrow { color: var(--green); font-size: .76rem; font-weight: 800; letter-spacing: .17em; text-transform: uppercase; }
@@ -77,13 +78,13 @@
     .setup code { color: #e2d3ff; }
     .footer { display: flex; flex-wrap: wrap; gap: 12px 22px; justify-content: space-between; margin-top: 32px; color: var(--soft); font-size: .8rem; }
     .footer a { color: var(--muted); }
-    @media (max-width: 760px) { .hero, .panel-grid { grid-template-columns: 1fr; } .hero { min-height: 0; padding-top: 50px; } .hero-art { order: -1; } .nav-note { display: none; } .panel { margin-top: 0; } }
+    @media (max-width: 760px) { .hero, .panel-grid { grid-template-columns: 1fr; } .hero { min-height: 0; padding-top: 50px; } .hero-art { order: -1; } .nav-note { display: none; } .panel { margin-top: 0; } .brand-logo { width: 102px; } }
   </style>
 </head>
 <body>
   <main class="page">
     <nav class="nav" aria-label="Primary">
-      <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>Codex Micro Glass Guide</span></div>
+      <div class="brand"><img class="brand-logo" src="../assets/graice-logo.svg" alt="grAIce"><span class="brand-divider" aria-hidden="true">×</span><span>Codex Micro Glass Guide</span></div>
       <span class="nav-note">A small guide for a small glowing device</span>
     </nav>
 
@@ -127,6 +128,7 @@
     </section>
 
     <footer class="footer">
+      <span>© 2026 Michelle Juhanson · grAIce Tech</span>
       <span>Independent community project · not affiliated with OpenAI or Work Louder</span>
       <span>Subscribe first, then continue to the public guide</span>
     </footer>

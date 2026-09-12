@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="../assets/graice-logo.svg" alt="grAIce" width="168">
+</p>
+
+<p align="center"><sub>© 2026 Michelle Juhanson · grAIce Tech</sub></p>
+
 # Codex Micro Glass Guide release manifest
 
 Release date: 2026-09-11

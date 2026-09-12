@@ -3,6 +3,12 @@ name: build-codex-micro-guide
 description: Build, personalize, and visually verify a native macOS floating glass guide for the Work Louder x OpenAI Codex Micro. Use when a user asks to create, update, resize, restyle, explain, package, or safely publish a Codex Micro learning overlay based on their current buttons, dial, joystick, layers, and recent Codex tasks.
 ---
 
+<p align="center">
+  <img src="../../assets/graice-logo.svg" alt="grAIce" width="168">
+</p>
+
+<p align="center"><sub>© 2026 Michelle Juhanson · grAIce Tech</sub></p>
+
 # Build a Codex Micro glass guide
 
 Create a local teaching overlay from the bundled native Swift template. Keep personal task data private and distinguish verified hardware behavior from inferred mappings.
