@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Get occasional launch notes and community updates for Codex Micro Glass Guide.">
+  <title>Codex Micro Glass Guide · Stay in the loop</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f5f7ff;
+      --muted: #b6bfd8;
+      --soft: #8b95b1;
+      --line: rgba(255,255,255,.16);
+      --glass: rgba(24, 31, 55, .68);
+      --glass-strong: rgba(17, 23, 43, .86);
+      --cyan: #86e9ff;
+      --violet: #c6a0ff;
+      --green: #b1f8cf;
+    }
+    * { box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 14% 10%, rgba(134,233,255,.20), transparent 34%),
+        radial-gradient(circle at 88% 14%, rgba(198,160,255,.22), transparent 31%),
+        linear-gradient(145deg, #080b16 0%, #111629 53%, #0b101f 100%);
+      font: 16px/1.55 ui-sans-serif, -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .22;
+      background-image: linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+      background-size: 52px 52px;
+      mask-image: linear-gradient(to bottom, #000, transparent 70%);
+    }
+    a { color: var(--cyan); }
+    .page { width: min(1120px, calc(100% - 36px)); margin: 0 auto; padding: 28px 0 56px; }
+    .nav { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+    .brand { display: inline-flex; align-items: center; gap: 11px; color: var(--ink); text-decoration: none; font-weight: 700; letter-spacing: -.02em; }
+    .brand-mark { width: 28px; height: 28px; border-radius: 9px; background: linear-gradient(135deg, var(--cyan), var(--violet)); box-shadow: 0 0 26px rgba(134,233,255,.32); }
+    .nav-note { color: var(--soft); font-size: .88rem; }
+    .hero { display: grid; grid-template-columns: 1.02fr .98fr; align-items: center; gap: clamp(30px, 6vw, 88px); min-height: 640px; padding: 62px 0 42px; }
+    .eyebrow { color: var(--green); font-size: .76rem; font-weight: 800; letter-spacing: .17em; text-transform: uppercase; }
+    h1 { max-width: 660px; margin: 16px 0 18px; font-size: clamp(2.8rem, 7vw, 5.9rem); line-height: .94; letter-spacing: -.075em; }
+    .lead { max-width: 600px; margin: 0; color: var(--muted); font-size: clamp(1.1rem, 2vw, 1.33rem); }
+    .hero-art { position: relative; }
+    .hero-art::before { content: ""; position: absolute; inset: 9% -5% 7%; border-radius: 50%; background: radial-gradient(circle, rgba(134,233,255,.25), transparent 64%); filter: blur(20px); }
+    .hero-art img { position: relative; display: block; width: 100%; border: 1px solid var(--line); border-radius: 28px; box-shadow: 0 28px 90px rgba(0,0,0,.42), inset 0 1px rgba(255,255,255,.14); }
+    .panel { position: relative; margin-top: -24px; padding: clamp(24px, 4vw, 42px); border: 1px solid var(--line); border-radius: 28px; background: linear-gradient(145deg, rgba(255,255,255,.11), rgba(255,255,255,.035)), var(--glass); box-shadow: 0 24px 80px rgba(0,0,0,.32), inset 0 1px rgba(255,255,255,.16); backdrop-filter: blur(28px); }
+    .panel-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 40px; align-items: start; }
+    h2 { margin: 0 0 9px; font-size: clamp(1.65rem, 3vw, 2.45rem); line-height: 1.05; letter-spacing: -.045em; }
+    .panel p { margin: 0; color: var(--muted); }
+    .promise { display: grid; gap: 13px; margin-top: 24px; padding: 18px; border: 1px solid rgba(177,248,207,.2); border-radius: 18px; background: rgba(177,248,207,.06); }
+    .promise div { display: flex; gap: 11px; align-items: start; color: #dbeee4; }
+    .promise strong { display: block; color: var(--ink); font-size: .96rem; }
+    .promise span { color: var(--soft); font-size: .88rem; }
+    form { display: grid; gap: 14px; }
+    label { color: var(--muted); font-size: .91rem; font-weight: 650; }
+    input[type="email"] { width: 100%; margin-top: 7px; padding: 14px 15px; border: 1px solid rgba(255,255,255,.2); border-radius: 13px; outline: none; color: var(--ink); background: rgba(5,8,18,.56); font: inherit; }
+    input[type="email"]:focus { border-color: var(--cyan); box-shadow: 0 0 0 4px rgba(134,233,255,.13); }
+    .button { display: inline-flex; justify-content: center; align-items: center; min-height: 48px; padding: 12px 18px; border-radius: 13px; color: #08101b; background: linear-gradient(135deg, var(--cyan), #c8f6ff); font: inherit; font-weight: 800; text-decoration: none; box-shadow: 0 12px 30px rgba(134,233,255,.18); }
+    .direct { display: inline-flex; align-items: center; justify-content: center; min-height: 47px; margin-top: 4px; border: 1px solid var(--line); border-radius: 13px; color: var(--ink); text-decoration: none; background: rgba(255,255,255,.055); }
+    .direct[hidden], .return-note[hidden] { display: none; }
+    .fineprint { color: var(--soft); font-size: .76rem; }
+    .consent-gate { display: flex; gap: 10px; align-items: start; margin: 18px 0 14px; color: var(--muted); font-size: .88rem; }
+    .consent-gate input { width: 17px; height: 17px; flex: 0 0 auto; margin-top: 3px; accent-color: #a8e9ff; }
+    .button[aria-disabled="true"] { pointer-events: none; opacity: .42; }
+    .status { min-height: 1.35em; color: var(--green); font-size: .88rem; }
+    .status.error { color: #ffb5bc; }
+    .setup { margin-top: 10px; padding: 11px 13px; border-left: 2px solid var(--violet); color: var(--soft); background: rgba(198,160,255,.07); font-size: .78rem; }
+    .setup code { color: #e2d3ff; }
+    .footer { display: flex; flex-wrap: wrap; gap: 12px 22px; justify-content: space-between; margin-top: 32px; color: var(--soft); font-size: .8rem; }
+    .footer a { color: var(--muted); }
+    @media (max-width: 760px) { .hero, .panel-grid { grid-template-columns: 1fr; } .hero { min-height: 0; padding-top: 50px; } .hero-art { order: -1; } .nav-note { display: none; } .panel { margin-top: 0; } }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <nav class="nav" aria-label="Primary">
+      <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span>Codex Micro Glass Guide</span></div>
+      <span class="nav-note">A small guide for a small glowing device</span>
+    </nav>
+
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <div class="eyebrow">Make the hardware stick</div>
+        <h1>Turn button confusion into muscle memory.</h1>
+        <p class="lead">Codex Micro Glass Guide is a translucent, movable learning guide for the Work Louder × OpenAI Codex Micro. Get occasional notes when the guide changes, new community patterns land, or a useful release is ready.</p>
+      </div>
+      <div class="hero-art">
+        <img src="../assets/codex-micro-glass-hero.png" alt="A rendering of the Codex Micro beside the translucent Codex Micro Glass Guide with six colored layer lights">
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="updates-title">
+      <div class="panel-grid">
+        <div>
+          <h2 id="updates-title">Get the occasional field note.</h2>
+          <p>One useful email at a time: launch notes, improvements, community-made personalizations, and practical ways to keep your Micro from becoming an expensive paperweight.</p>
+          <div class="promise" aria-label="Email promise">
+            <div><span aria-hidden="true">✦</span><span><strong>Purposeful</strong> Only updates about this guide, its community, and related releases.</span></div>
+            <div><span aria-hidden="true">⌁</span><span><strong>Occasional</strong> No fixed daily cadence and no unrelated promotions.</span></div>
+            <div><span aria-hidden="true">↗</span><span><strong>Easy to leave</strong> Every email includes an unsubscribe link, and you can leave anytime.</span></div>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <p style="margin-bottom:16px;color:var(--ink);font-weight:750">First, choose whether you want updates:</p>
+            <label class="consent-gate" for="consent">
+              <input id="consent" type="checkbox">
+              <span>I want occasional communications from Michelle about Codex Micro Glass Guide, and I understand I can unsubscribe anytime.</span>
+            </label>
+            <a id="substack-link" class="button" aria-disabled="true" tabindex="-1" href="https://graice.substack.com/subscribe">Continue to Substack to enter my email&nbsp; →</a>
+            <p class="fineprint" style="margin-top:14px">Substack collects your email and records your choice. Its subscribe page identifies the sender, links to its terms and privacy information, and provides the unsubscribe controls. This page cannot verify whether you completed the subscription.</p>
+            <p id="return-note" class="return-note" hidden>After you finish on Substack, use your browser’s Back button to return here. Then continue to the public guide.</p>
+            <a id="repo-link" class="direct" hidden href="https://github.com/grAIcetech/codex-micro-glass-guide" rel="noopener">Continue to the public Codex Micro Glass Guide repository&nbsp; →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>Independent community project · not affiliated with OpenAI or Work Louder</span>
+      <span>Subscribe first, then continue to the public guide</span>
+    </footer>
+  </main>
+
+  <script>
+    const consent = document.getElementById("consent");
+    const substackLink = document.getElementById("substack-link");
+    const returnNote = document.getElementById("return-note");
+    const repoLink = document.getElementById("repo-link");
+    const refreshReturnStep = () => {
+      let started = false;
+      try { started = sessionStorage.getItem("codex-micro-substack-started") === "yes"; } catch (error) {}
+      const optedIn = consent.checked;
+      returnNote.hidden = !(started && optedIn);
+      repoLink.hidden = !(started && optedIn);
+    };
+    consent.addEventListener("change", () => {
+      const allowed = consent.checked;
+      substackLink.setAttribute("aria-disabled", String(!allowed));
+      substackLink.tabIndex = allowed ? 0 : -1;
+    });
+    substackLink.addEventListener("click", () => {
+      try { sessionStorage.setItem("codex-micro-substack-started", "yes"); } catch (error) {}
+    });
+    window.addEventListener("pageshow", refreshReturnStep);
+    refreshReturnStep();
+  </script>
+
+</body>
+</html>

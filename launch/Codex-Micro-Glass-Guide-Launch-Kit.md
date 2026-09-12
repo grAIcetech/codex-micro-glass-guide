@@ -3,6 +3,8 @@
 Final release copy for Substack and LinkedIn.
 
 Repository: <https://github.com/grAIcetech/codex-micro-glass-guide>
+Consent page: <https://graicetech.github.io/codex-micro-glass-guide/join/>
+Consent page source: [`join/index.html`](../join/index.html). The page requires an explicit opt-in before revealing the repository link, and Substack handles email collection and unsubscribe controls.
 
 Release video: [`../media/Codex-Micro-Glass-Guide.mp4`](../media/Codex-Micro-Glass-Guide.mp4)
 
@@ -86,9 +88,11 @@ That is the part I am most excited about. A limited-release device does not need
 
 ## Try Codex Micro Glass Guide
 
-The skill, source, privacy-safe Mac app template, four-minute video, and installation instructions are now public:
+The skill, source, privacy-safe Mac app template, three-minute video, and installation instructions are now public. Start at the consent-first page:
 
-**<https://github.com/grAIcetech/codex-micro-glass-guide>**
+**<https://graicetech.github.io/codex-micro-glass-guide/join/>**
+
+Check the consent box, subscribe on Substack, and return to unlock the repository link. The repository URL is intentionally revealed only after that opt-in step.
 
 The skill is called **`build-codex-micro-guide`**. Once installed, ask Codex:
 
@@ -114,11 +118,11 @@ The limited-release Work Louder × OpenAI Codex Micro has a dial, joystick, touc
 
 So I built **Codex Micro Glass Guide**: a translucent, movable, resizable Mac guide that keeps the controls and plain-language reminders visible while muscle memory develops.
 
-The privacy-safe project includes a Codex skill, a native Mac app template, and a four-minute walkthrough. It is designed to be personalized—rename the layers, change the colors, rewrite the notes, and match it to your workflow.
+The privacy-safe project includes a Codex skill, a native Mac app template, and a three-minute walkthrough. It is designed to be personalized—rename the layers, change the colors, rewrite the notes, and match it to your workflow.
 
 It is now open source:
 
-🔗 <https://github.com/grAIcetech/codex-micro-glass-guide>
+🔗 Start here: <https://graicetech.github.io/codex-micro-glass-guide/join/>. Check the consent box, subscribe on Substack, and return to unlock the repository link.
 
 Make it yours, and share the privacy-safe improvements that might help someone else.
 

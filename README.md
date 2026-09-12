@@ -16,18 +16,18 @@
 > [!NOTE]
 > The device image is an original community rendering based on the official control layout, not an official product photograph. The interface is captured from the real working build with privacy-safe sample tasks.
 
-## Watch the four-minute guide
+## Watch the three-minute guide
 
 <p align="center">
-  <a href="https://github.com/grAIcetech/codex-micro-glass-guide/releases/download/v1.0.0/Codex-Micro-Glass-Guide.mp4">
-    <img src="assets/codex-micro-glass-hero.png" alt="Download the Codex Micro Glass Guide four-minute walkthrough" width="88%">
+  <a href="https://github.com/grAIcetech/codex-micro-glass-guide/releases/download/v1.0.1/Codex-Micro-Glass-Guide.mp4">
+    <img src="assets/codex-micro-glass-hero.png" alt="Download the Codex Micro Glass Guide three-minute walkthrough" width="88%">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/grAIcetech/codex-micro-glass-guide/releases/download/v1.0.0/Codex-Micro-Glass-Guide.mp4"><strong>Download the final four-minute video</strong></a>
+  <a href="https://github.com/grAIcetech/codex-micro-glass-guide/releases/download/v1.0.1/Codex-Micro-Glass-Guide.mp4"><strong>Download the final three-minute video</strong></a>
   ·
-  <a href="https://github.com/grAIcetech/codex-micro-glass-guide/releases/download/v1.0.0/Codex-Micro-Glass-Guide.srt">Download captions</a>
+  <a href="https://github.com/grAIcetech/codex-micro-glass-guide/releases/download/v1.0.1/Codex-Micro-Glass-Guide.srt">Download captions</a>
 </p>
 
 ## The problem
@@ -68,6 +68,19 @@ The shortcut route provides one-button access while keeping the guide's behavior
 The public template is a starting point, not a prescribed layout. Give your layers memorable names, match the key labels to the shortcuts you actually use, adjust the colors, and rewrite the teaching notes in your own language. Your guide should feel like **your** desk companion.
 
 Share your privacy-safe themes, label ideas, and accessibility improvements with the community. Keep real Codex task titles and links in your local generated app only.
+
+## Launch updates (consent first)
+
+The launch campaign uses a separate, consent-first page before the repository link:
+[`join/index.html`](join/index.html). It explains what updates contain, requires an explicit
+opt-in to communications from Michelle, and sends subscribers to the owner's real Substack
+subscribe route, where email collection and unsubscribe controls are handled. The public
+repository link is revealed only after the visitor has checked the consent box and returned
+from Substack. The page never pretends that this repository operates its own mailing list.
+
+When the page is deployed and its provider is verified, use that deployed URL in public posts:
+
+> **[Open the consent-first guide page](https://graicetech.github.io/codex-micro-glass-guide/join/)**
 
 ## Skill + app: two pieces, one helper
 

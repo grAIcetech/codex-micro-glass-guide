@@ -1,34 +1,35 @@
 # Codex Micro Glass Guide release manifest
 
-Release date: 2026-08-21
-Media revised: 2026-08-31
+Release date: 2026-09-11
+Release: v1.0.1
+Media revised: 2026-09-11
 
 ## Final media
 
 | File | Purpose | SHA-256 |
 |---|---|---|
-| `media/Codex-Micro-Glass-Guide.mp4` | Final 1920×1080 H.264/AAC launch video, 4:32.790 | `69ed1aaf2f4924e106025b3a6a9a41092672bbf79a70bf69b51ad2bd01445f1f` |
-| `media/Codex-Micro-Glass-Guide.srt` | English captions for the final cut | `be9129ee6ab83f1b55bd31243a16757440df26c4aa0d8955e0ea9586671cc4aa` |
+| `media/Codex-Micro-Glass-Guide.mp4` | Final 1920×1080 H.264/AAC GitHub launch video, 3:00.562 | `7e5e7112d9febe6c1ad323852b48fad05413e19eef1a920b7cbd8944a7aaadf1` |
+| `media/Codex-Micro-Glass-Guide.srt` | English captions for the three-minute cut | `6d0d4435d9c17e5091a3eb06bc15b9d26c164ede14e157824763e7fe441aa911` |
 
 ## Provenance
 
 - Narration and music come from the approved HeyGen master using Michelle's private clone voice.
 - Product imagery comes from `assets/codex-micro-glass-hero.png` and `assets/codex-micro-glass-app.png`.
-- The final media is the approved HeyGen `Codex Micro Glass Guide Launch Film` master.
+- The final media is the approved HeyGen `Codex Micro Glass Guide` three-minute GitHub cut.
 - The approved long-form narration is recorded in `launch/HeyGen-Substack-Narration.md`.
-- The superseded three-minute edit remains documented in `launch/HeyGen-GitHub-3-Minute-Narration.md`, `launch/HeyGen-GitHub-3-Minute-Storyboard.md`, and `launch/composite-github-cut.sh` for provenance only.
+- The three-minute edit is documented in `launch/HeyGen-GitHub-3-Minute-Narration.md`, `launch/HeyGen-GitHub-3-Minute-Storyboard.md`, and `launch/composite-github-cut.sh`.
 - Personal Codex task names, links, and identifiers are not present in the public media or template.
 
 ## Release revision
 
-- Restored the preferred 4:32 HeyGen launch film after the initial three-minute GitHub edit.
-- Kept the stable release filename and download URL so existing links continue to work.
-- Replaced the companion captions with the matching 4:32 caption track.
+- Restored the approved three-minute GitHub cut for the limited release.
+- Published the corrected media under v1.0.1 so the stale v1.0.0 four-minute asset remains preserved as historical provenance.
+- Replaced the companion captions with the matching three-minute caption track.
 
 ## Verification
 
 - Complete video decode passed.
 - The final disclosure occurs once.
 - Final media is 1920×1080 H.264 video with 48 kHz stereo AAC audio.
-- Captions contain 734 words and end at `04:32.470`.
+- Captions match the three-minute cut and end at `03:00.560`.
 - The published media contains privacy-safe sample labels rather than personal task names, links, or identifiers.
